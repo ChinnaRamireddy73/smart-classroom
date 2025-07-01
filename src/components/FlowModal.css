@@ -1,0 +1,114 @@
+/* FlowModal.css */
+.flow-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: auto;
+  padding: 20px;
+}
+
+.flow-modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeSlideIn 0.4s ease;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flow-title {
+  font-size: 26px;
+  color: #002b53;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.flow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flow-step {
+  background-color: #f1f7ff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border-left: 6px solid #005baa;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.flow-step:hover {
+  background-color: #e0efff;
+  transform: scale(1.02);
+}
+
+.step-number {
+  font-weight: bold;
+  color: #005baa;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+}
+
+.close-flow-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #005baa;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.close-flow-btn:hover {
+  background-color: #003f7f;
+  transform: rotate(90deg);
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 600px) {
+  .flow-modal {
+    padding: 20px;
+  }
+
+  .flow-title {
+    font-size: 22px;
+  }
+
+  .flow-step {
+    font-size: 14px;
+  }
+}
