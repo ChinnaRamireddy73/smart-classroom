@@ -3,11 +3,14 @@ import "./HomePage.css";
 import heroImg from "../images/Online learning-bro.png";
 import AuthModal from "./AuthModal";
 import FlowModal from "./FlowModal"; // Make sure this file exists and is styled
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
   const [selectedFlow, setSelectedFlow] = useState(null);
+  const navigate = useNavigate();
+
 
   const closeModal = () => {
     setShowLogin(false);
@@ -82,9 +85,9 @@ function HomePage() {
             <br />
             <span>— Nelson Mandela</span>
           </blockquote>
-          <div className="hero-buttons">
-            <button onClick={() => setShowSignup(true)}>Join as a Volunteer</button>
-            <button onClick={() => setShowSignup(true)}>Enroll Now</button>
+          <div className="hero-buttons">                  
+            <button onClick={() => navigate("/volunteer-apply")}>Join as a Volunteer</button>
+            <button onClick={() => navigate("/student-enroll")}>Enroll Now</button> 
           </div>
         </div>
         <div className="hero-img">

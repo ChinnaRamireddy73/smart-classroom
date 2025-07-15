@@ -1,0 +1,81 @@
+.teacher-profile {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  color: var(--text-color);
+}
+
+.teacher-profile h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 40px;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  object-fit: cover;
+}
+
+.upload-btn {
+  margin-top: 15px;
+  padding: 10px 14px;
+  background: #04364a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-right label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.profile-right input {
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.update-btn {
+  background: #04364a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.update-btn:hover {
+  background: #065f73;
+}

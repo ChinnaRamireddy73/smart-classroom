@@ -1,0 +1,86 @@
+.volunteer-form-container {
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.volunteer-form-container h2 {
+  text-align: center;
+  color: #04364A;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.volunteer-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.volunteer-form label {
+  font-weight: 600;
+  color: #04364A;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.volunteer-form input,
+.volunteer-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fefefe;
+  transition: border 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.volunteer-form input:focus,
+.volunteer-form textarea:focus {
+  border-color: #04364A;
+  outline: none;
+}
+
+/* For wider fields across two columns */
+.volunteer-form .full-width {
+  grid-column: span 2;
+}
+
+.volunteer-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.volunteer-form button {
+  grid-column: span 2;
+  background-color: #04364A;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer-form button:hover {
+  background-color: #065f73;
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+  .volunteer-form {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-form .full-width,
+  .volunteer-form button {
+    grid-column: 1;
+  }
+}

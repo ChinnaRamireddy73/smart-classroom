@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: #67a9e7 0px 4px 10px  ;
 }
 
 .navbar-left {
