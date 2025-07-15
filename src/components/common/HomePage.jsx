@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./HomePage.css";
-import heroImg from "../images/Online learning-bro.png";
-import AuthModal from "./AuthModal";
-import FlowModal from "./FlowModal"; // Make sure this file exists and is styled
+import onlineLearningImg from "../../assets/Online learning-bro.png";
+
+import AuthModal from "../modals/AuthModal";
+
+import FlowModal from "../modals/FlowModal";
+ // Make sure this file exists and is styled
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
@@ -91,7 +94,7 @@ function HomePage() {
           </div>
         </div>
         <div className="hero-img">
-          <img src={heroImg} alt="Learning Illustration" />
+          <img src={onlineLearningImg} alt="Learning Illustration" />
         </div>
       </section>
 

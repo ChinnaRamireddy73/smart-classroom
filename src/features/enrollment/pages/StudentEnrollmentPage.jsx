@@ -1,7 +1,8 @@
+// StudentEnrollmentPage.jsx
 import React, { useState } from "react";
 import "./StudentEnrollment.css";
 
-function StudentEnroll() {
+function StudentEnrollmentPage() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -106,4 +107,4 @@ function StudentEnroll() {
   );
 }
 
-export default StudentEnroll;
+export default StudentEnrollmentPage;
