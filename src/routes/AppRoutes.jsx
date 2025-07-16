@@ -11,6 +11,8 @@ import CalendarPage from "../features/classroom/pages/CalendarPage";
 // Dashboards and Private Pages
 import StudentDashboard from "../features/dashboard/pages/StudentDashboard";
 import TeacherDashboard from "../features/dashboard/pages/TeacherDashboard";
+import VideoUpload from "../features/teacher/components/VideoUpload"; // ✅ path must be correct
+
 import AdminDashboard from "../features/dashboard/pages/AdminDashboard";
 import TeacherProfile from "../features/teacher/pages/TeacherProfile";
 
@@ -25,7 +27,7 @@ const AppRoutes = () => {
       <Route path="/calendar" element={<CalendarPage />} />
       <Route path="/student-enroll" element={<StudentEnrollment />} />
       <Route path="/volunteer-apply" element={<VolunteerApplication />} />
-
+      <Route path="/video-upload" element={<VideoUpload />} />
       {/* Student Routes (only if role === 'student') */}
       <Route
         path="/student-dashboard"
@@ -64,6 +66,7 @@ const AppRoutes = () => {
         }
       />
     </Routes>
+    
   );
 };
 
